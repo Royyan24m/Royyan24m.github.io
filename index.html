@@ -7,6 +7,9 @@
   <title>Royyan Masloman | Programmer Kotamobagu</title>
   <meta name="description" content="Website resmi Royyan Masloman, programmer dan mahasiswa asal Kotamobagu, Sulawesi Utara." />
 
+ <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
   <!-- JSON-LD Schema (JUJUR & VALID) -->
   <script type="application/ld+json">
   {
@@ -29,43 +32,107 @@
 
 </head>
 
-<body>
+<body class="bg-gray-50 text-gray-800">
 
-  <header>
-    <h1>Royyan Masloman</h1>
-    <p>Programmer dan Mahasiswa dari Kotamobagu, Sulawesi Utara</p>
-  </header>
+<!-- NAVBAR -->
+<nav class="bg-white shadow fixed w-full z-50">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <span class="text-xl font-bold text-blue-600">Royyan Masloman</span>
+    <div class="space-x-6 hidden md:block">
+      <a href="#home" class="hover:text-blue-600">Home</a>
+      <a href="#about" class="hover:text-blue-600">About</a>
+      <a href="#skills" class="hover:text-blue-600">Skills</a>
+      <a href="#portfolio" class="hover:text-blue-600">Portfolio</a>
+      <a href="#contact" class="hover:text-blue-600">Contact</a>
+    </div>
+  </div>
+</nav>
 
-  <main>
-
-    <section>
-      <h2>Tentang Saya</h2>
-      <p>
-        Royyan Masloman adalah programmer dan mahasiswa asal Kotamobagu,
-        Sulawesi Utara. Website ini merupakan portofolio pribadi
-        dan identitas digital resmi.
+<!-- HERO -->
+<section id="home" class="pt-28 pb-20 bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+    <div>
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">
+        Royyan Masloman
+      </h1>
+      <p class="text-lg mb-6">
+        Programmer & Web Developer dari Kotamobagu yang fokus pada pembuatan website modern, backend, database, dan cyber security.
       </p>
-    </section>
+      <a href="#contact" class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-200">
+        Hubungi Saya
+      </a>
+    </div>
+    <div class="flex justify-center">
+      <img src="foto.jpg" alt="Royyan Masloman" class="w-64 h-64 rounded-full object-cover shadow-lg border-4 border-white">
+    </div>
+  </div>
+</section>
 
-    <section>
-      <h2>Keahlian</h2>
-      <ul>
-        <li>HTML, CSS, JavaScript</li>
-        <li>Web Development</li>
-        <li>Game Development (Dasar)</li>
-      </ul>
-    </section>
+<!-- ABOUT -->
+<section id="about" class="py-20">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold mb-6">Tentang Saya</h2>
+    <p class="text-gray-600 leading-relaxed">
+      Saya Royyan Masloman, seorang programmer dan mahasiswa asal Kotamobagu, Sulawesi Utara.
+      Saya memiliki minat kuat dalam web development, backend system, pengelolaan database,
+      serta cyber security. Saya terbiasa membangun website dari frontend hingga backend
+      menggunakan teknologi modern.
+    </p>
+  </div>
+</section>
 
-    <section>
-      <h2>Kontak</h2>
-      <p>GitHub: https://github.com/Royyan24m</p>
-    </section>
+<!-- SKILLS -->
+<section id="skills" class="bg-gray-100 py-20">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-12">Keahlian</h2>
 
-  </main>
+    <div class="grid md:grid-cols-4 gap-6 text-center">
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="font-semibold text-lg mb-2">Web Development</h3>
+        <p class="text-sm text-gray-600">HTML, CSS, JavaScript, Tailwind, Next.js</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="font-semibold text-lg mb-2">Backend</h3>
+        <p class="text-sm text-gray-600">PHP, Python, CRUD System</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="font-semibold text-lg mb-2">Database</h3>
+        <p class="text-sm text-gray-600">MySQL, SQL Server, Integrasi Server</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="font-semibold text-lg mb-2">Cyber Security</h3>
+        <p class="text-sm text-gray-600">Nmap, SQLMap, Metasploit</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <footer>
-    <p>© 2025 Royyan Masloman</p>
-  </footer>
+<!-- PORTFOLIO -->
+<section id="portfolio" class="py-20">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold mb-6">Portofolio</h2>
+    <p class="text-gray-600">
+      Beberapa proyek yang telah saya kerjakan akan ditampilkan di sini.
+    </p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="bg-blue-600 text-white py-20">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold mb-4">Kontak</h2>
+    <p class="mb-4">Terhubung dengan saya melalui GitHub</p>
+    <a href="https://github.com/Royyan24m" class="underline text-lg">
+      github.com/Royyan24m
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-gray-900 text-gray-400 text-center py-6">
+  © 2026 Royyan Masloman
+</footer>
 
 </body>
 </html>
+
