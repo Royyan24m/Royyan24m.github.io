@@ -16,23 +16,60 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
+  "@graph": [
     {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://royyan24m.github.io/"
+      "@type": "Person",
+      "@id": "https://royyan24m.github.io/#person",
+      "name": "Royyan Masloman",
+      "jobTitle": "Programmer",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Kotamobagu",
+        "addressRegion": "Sulawesi Utara",
+        "addressCountry": "Indonesia"
+      },
+      "url": "https://royyan24m.github.io/",
+      "sameAs": [
+        "https://github.com/Royyan24m"
+      ]
     },
     {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Artikel",
-      "item": "https://royyan24m.github.io/artikel/keahlian.html"
+      "@type": "Article",
+      "headline": "Profil Royyan Masloman sebagai Programmer Muda dari Kotamobagu",
+      "author": {
+        "@id": "https://royyan24m.github.io/#person"
+      },
+      "publisher": {
+        "@id": "https://royyan24m.github.io/#person"
+      },
+      "datePublished": "2026-01-28",
+      "dateModified": "2026-01-28",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://royyan24m.github.io/artikel.html"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://royyan24m.github.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Artikel",
+          "item": "https://royyan24m.github.io/artikel.html"
+        }
+      ]
     }
   ]
 }
 </script>
+
 
   
   <!-- Tailwind -->
