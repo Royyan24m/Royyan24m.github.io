@@ -4,29 +4,53 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Royyan Masloman | Programmer & Web Developer</title>
-<meta name="description" content="Website resmi Royyan Masloman, programmer dan mahasiswa dari Kotamobagu. Portofolio, artikel, dan keahlian IT.">
+<title>Royyan Masloman | Web Developer & Programmer Indonesia</title>
+
+<meta name="description" content="Website resmi Royyan Masloman, web developer dan programmer dari Kotamobagu, Sulawesi Utara. Spesialis website, backend, database, dan cyber security.">
 
 <meta name="robots" content="index, follow">
 
 <!-- Open Graph -->
-<meta property="og:title" content="Royyan Masloman | Programmer">
-<meta property="og:description" content="Website resmi Royyan Masloman, Web Developer dari Kotamobagu">
+<meta property="og:title" content="Royyan Masloman | Web Developer Profesional">
+<meta property="og:description" content="Portofolio dan profil Royyan Masloman, programmer Indonesia dari Kotamobagu.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://royyan24m.github.io/">
 <meta property="og:image" content="https://royyan24m.github.io/foto.jpg">
 
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Royyan Masloman | Web Developer">
+<meta name="twitter:description" content="Website resmi Royyan Masloman">
+<meta name="twitter:image" content="https://royyan24m.github.io/foto.jpg">
+
 <!-- Tailwind -->
 <script src="https://cdn.tailwindcss.com"></script>
 
-<!-- Schema Person -->
+<!-- Schema: Person -->
 <script type="application/ld+json">
 {
 "@context":"https://schema.org",
 "@type":"Person",
 "name":"Royyan Masloman",
+"alternateName":"Royyan",
+"jobTitle":"Web Developer",
+"address":{
+"@type":"PostalAddress",
+"addressLocality":"Kotamobagu",
+"addressRegion":"Sulawesi Utara",
+"addressCountry":"ID"
+},
 "url":"https://royyan24m.github.io/",
-"jobTitle":"Programmer",
+"knowsAbout":[
+"Web Development",
+"HTML",
+"CSS",
+"JavaScript",
+"PHP",
+"Python",
+"MySQL",
+"Cyber Security"
+],
 "sameAs":[
 "https://github.com/Royyan24m",
 "https://medium.com/@royyanofficial86"
@@ -34,7 +58,21 @@
 }
 </script>
 
-<!-- Profile Page -->
+<!-- Schema: Website -->
+<script type="application/ld+json">
+{
+"@context":"https://schema.org",
+"@type":"WebSite",
+"name":"Website Royyan Masloman",
+"url":"https://royyan24m.github.io/",
+"publisher":{
+"@type":"Person",
+"name":"Royyan Masloman"
+}
+}
+</script>
+
+<!-- Schema: ProfilePage -->
 <script type="application/ld+json">
 {
 "@context":"https://schema.org",
@@ -49,85 +87,170 @@
 
 </head>
 
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-gray-50 text-gray-800 scroll-smooth">
 
-<!-- NAV -->
-<nav class="bg-white shadow fixed w-full z-50">
-<div class="max-w-6xl mx-auto px-6 py-4 flex justify-between">
-<span class="font-bold text-blue-600">Royyan</span>
-<div class="space-x-6">
-<a href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#artikel">Artikel</a>
-<a href="#skills">Skills</a>
-<a href="#contact">Contact</a>
+<!-- NAVBAR -->
+<nav class="fixed w-full bg-white shadow z-50">
+<div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+<h1 class="text-xl font-bold text-blue-600">Royyan</h1>
+
+<div class="space-x-6 hidden md:flex">
+
+<a href="#home" class="hover:text-blue-600">Home</a>
+<a href="#about" class="hover:text-blue-600">About</a>
+<a href="#skills" class="hover:text-blue-600">Skills</a>
+<a href="#portfolio" class="hover:text-blue-600">Portfolio</a>
+<a href="#artikel" class="hover:text-blue-600">Artikel</a>
+<a href="#contact" class="hover:text-blue-600">Contact</a>
+
 </div>
+
 </div>
 </nav>
 
 <!-- HERO -->
-<section id="home" class="pt-32 pb-20 bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
-<div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10">
+<section id="home" class="pt-32 pb-24 bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-700 text-white">
+
+<div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
 
 <div>
-<h1 class="text-4xl font-bold mb-4">Royyan Masloman</h1>
-<p class="mb-6">
-Programmer & Web Developer dari Kotamobagu
+
+<h2 class="text-4xl md:text-5xl font-bold mb-6">
+Royyan Masloman
+</h2>
+
+<p class="text-lg mb-8 leading-relaxed">
+Web Developer & Programmer dari Kotamobagu, fokus membangun website modern, sistem backend, database, dan keamanan digital.
 </p>
 
-<a href="#contact" class="bg-white text-blue-600 px-6 py-3 rounded-full">
+<div class="space-x-4">
+
+<a href="#contact" class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold">
 Hubungi Saya
 </a>
+
+<a href="#portfolio" class="border border-white px-6 py-3 rounded-full">
+Lihat Proyek
+</a>
+
+</div>
+
 </div>
 
 <div class="flex justify-center">
-<img src="foto.jpg" class="w-60 h-60 rounded-full border-4 border-white shadow">
+
+<img src="foto.jpg"
+alt="Royyan Masloman"
+class="w-72 h-72 rounded-full border-4 border-white shadow-xl object-cover">
+
 </div>
 
 </div>
 </section>
 
 <!-- ABOUT -->
-<section id="about" class="py-20">
+<section id="about" class="py-24">
+
 <div class="max-w-4xl mx-auto px-6 text-center">
 
 <h2 class="text-3xl font-bold mb-6">Tentang Saya</h2>
 
-<p class="text-gray-600">
-Saya Royyan Masloman, programmer dan mahasiswa dari Kotamobagu.
-Fokus pada web development, backend, database, dan cyber security.
+<p class="text-gray-600 leading-relaxed mb-4">
+Saya Royyan Masloman, programmer dan mahasiswa dari Kotamobagu, Sulawesi Utara.
+Saya berpengalaman membangun website dari frontend hingga backend.
 </p>
 
-<p class="mt-4 text-gray-600">
-Website ini merupakan portofolio digital resmi saya.
+<p class="text-gray-600 leading-relaxed">
+Saya aktif mengembangkan portofolio, menulis artikel teknologi, dan belajar cyber security.
 </p>
 
 </div>
 </section>
 
+<!-- SKILLS -->
+<section id="skills" class="py-24 bg-gray-100">
+
+<div class="max-w-7xl mx-auto px-6">
+
+<h2 class="text-3xl font-bold text-center mb-12">Keahlian</h2>
+
+<div class="grid md:grid-cols-4 gap-8 text-center">
+
+<div class="bg-white p-6 rounded-xl shadow">
+HTML, CSS, JavaScript
+</div>
+
+<div class="bg-white p-6 rounded-xl shadow">
+PHP & Python Backend
+</div>
+
+<div class="bg-white p-6 rounded-xl shadow">
+MySQL & Database
+</div>
+
+<div class="bg-white p-6 rounded-xl shadow">
+Cyber Security
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio" class="py-24">
+
+<div class="max-w-5xl mx-auto px-6 text-center">
+
+<h2 class="text-3xl font-bold mb-6">Portofolio</h2>
+
+<p class="text-gray-600 mb-8">
+Website CRUD, Landing Page, Sistem Database, Aplikasi Web
+</p>
+
+<div class="grid md:grid-cols-3 gap-6">
+
+<div class="bg-white p-6 shadow rounded-xl">
+Website Sekolah
+</div>
+
+<div class="bg-white p-6 shadow rounded-xl">
+Sistem UMKM
+</div>
+
+<div class="bg-white p-6 shadow rounded-xl">
+Portfolio Personal
+</div>
+
+</div>
+
+</div>
+</section>
+
 <!-- ARTIKEL -->
-<section id="artikel" class="py-20 bg-gray-100">
+<section id="artikel" class="py-24 bg-gray-100">
 
 <div class="max-w-4xl mx-auto px-6">
 
-<h2 class="text-3xl font-bold mb-8 text-center">Artikel</h2>
+<h2 class="text-3xl font-bold text-center mb-10">Artikel</h2>
 
 <ul class="space-y-6">
 
 <li>
-<a href="artikel/artikel1.html" class="text-blue-600 text-lg font-semibold">
+<a href="artikel/profil.html" class="text-blue-600 font-semibold">
 Profil Royyan Masloman
 </a>
 </li>
 
 <li>
-<a href="artikel/keahlian.html" class="text-blue-600 text-lg font-semibold">
+<a href="artikel/keahlian.html" class="text-blue-600 font-semibold">
 Keahlian Web Development
 </a>
 </li>
 
 <li>
-<a href="https://medium.com/@royyanofficial86" class="text-blue-600">
+<a href="https://medium.com/@royyanofficial86" class="text-blue-600 font-semibold">
 Blog Medium
 </a>
 </li>
@@ -137,49 +260,23 @@ Blog Medium
 </div>
 </section>
 
-<!-- SKILLS -->
-<section id="skills" class="py-20">
-
-<div class="max-w-6xl mx-auto px-6">
-
-<h2 class="text-3xl font-bold text-center mb-12">Keahlian</h2>
-
-<div class="grid md:grid-cols-4 gap-6">
-
-<div class="bg-white p-6 shadow rounded">
-HTML, CSS, JS
-</div>
-
-<div class="bg-white p-6 shadow rounded">
-PHP & Python
-</div>
-
-<div class="bg-white p-6 shadow rounded">
-MySQL
-</div>
-
-<div class="bg-white p-6 shadow rounded">
-Cyber Security
-</div>
-
-</div>
-
-</div>
-</section>
-
 <!-- CONTACT -->
-<section id="contact" class="bg-blue-600 text-white py-20 text-center">
+<section id="contact" class="py-24 bg-blue-700 text-white text-center">
 
-<h2 class="text-3xl font-bold mb-4">Kontak</h2>
+<h2 class="text-3xl font-bold mb-6">Hubungi Saya</h2>
 
-<a href="https://github.com/Royyan24m" class="underline">
+<p class="mb-4">Email & GitHub</p>
+
+<a href="https://github.com/Royyan24m" class="underline text-lg">
 github.com/Royyan24m
 </a>
 
 </section>
 
 <footer class="bg-gray-900 text-gray-400 py-6 text-center">
-© 2026 Royyan Masloman
+
+© 2026 Royyan Masloman · Web Developer Indonesia
+
 </footer>
 
 </body>
