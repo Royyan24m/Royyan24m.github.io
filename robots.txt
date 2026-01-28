@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://royyan24m.github.io/sitemap.xml
