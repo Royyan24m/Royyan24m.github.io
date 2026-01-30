@@ -17,15 +17,31 @@
 <meta name="robots" content="index, follow">
 
 <script src="https://cdn.tailwindcss.com"></script>
+
+<script>
+tailwind.config = {
+  darkMode: 'class'
+}
+</script>
+
+<script src="https://unpkg.com/scrollreveal"></script>
+  
 </head>
 
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-200 transition">
+
 
 <!-- NAVBAR -->
 <nav class="fixed w-full bg-white shadow z-50">
   <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
     <h1 class="font-bold text-xl text-blue-600">Royyan</h1>
-    <div class="space-x-6 hidden md:block">
+<div class="flex items-center space-x-6 hidden md:flex">
+
+  <button id="themeToggle"
+    class="text-xl hover:scale-110 transition">
+    🌙
+  </button>
+
       <a href="#home" class="hover:text-blue-600">Home</a>
       <a href="#about" class="hover:text-blue-600">About</a>
       <a href="#skills" class="hover:text-blue-600">Skills</a>
@@ -207,5 +223,44 @@
 
 </footer>
 
+<script>
+const toggle = document.getElementById("themeToggle");
+const html = document.documentElement;
+
+// Load theme
+if(localStorage.theme === "dark"){
+  html.classList.add("dark");
+  toggle.textContent = "☀️";
+}
+
+// Toggle
+toggle.addEventListener("click", ()=>{
+
+  if(html.classList.contains("dark")){
+    html.classList.remove("dark");
+    localStorage.theme="light";
+    toggle.textContent="🌙";
+  }else{
+    html.classList.add("dark");
+    localStorage.theme="dark";
+    toggle.textContent="☀️";
+  }
+
+});
+</script>
+
+  <script>
+ScrollReveal().reveal('section', {
+  delay: 200,
+  distance: '40px',
+  origin: 'bottom',
+  duration: 800,
+  easing: 'ease-in-out',
+  reset: false
+});
+</script>
+
+  
 </body>
 </html>
+
